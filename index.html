@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Lydia Pless 10/17/23-->
+<meta charset="utf-8">
+<title>Lab 12 Greeting Card</title>
+
+<style>
+body{background-color:#B4EBAC;}
+p{color:red;
+	font-size:44pt;
+	}
+
+#xmas{position:absolute;
+top: 100px;
+left: 250px;
+width: 1000px;
+height: 900px;
+border-color:#EB7474;
+border-style: double;
+text-align: center;
+}
+</style>
+
+<script>
+
+function rollover (a)
+{
+document.getElementById("greeting").src=a;
+}
+
+</script>
+
+</head>
+
+
+<body>
+
+<div id="xmas">
+<p>Happy Holidays and a Restful Break!<p>
+<img id="greeting" src="santa.jpg" alt="happy holiday image" onmouseover="rollover('elf.jpg')">
+</div>
+
+</body>
+</html>
